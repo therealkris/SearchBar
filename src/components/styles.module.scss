@@ -1,0 +1,103 @@
+:root {
+  --blue: #1d8ffb;
+  --gray: #e8e8e8;
+  --purple: #9370DB;
+  --black: #272727;
+  --darkGray: #b9b9b9;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  display: inline-block;
+  background: var(--gray);
+  font-size: 14px;
+  font-weight: bold;
+
+  &.btnSignup {
+    background:var(--blue);
+    color: #fff;
+  }
+}
+
+header {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) repeat(2, minmax(75px, 100px)) 50px;
+  grid-column-gap: 1rem;
+
+  input[type='search'] {
+    background: var(--gray);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .results {
+    position: absolute;
+    width: 100%;
+    padding:0 20px;
+    left: 0;
+    height: 400px;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(to bottom,
+            rgba(255,255,255,.99) 0,
+            rgba(255,255,255,.624) 60%,
+            rgba(255,255,255,.58) 70%,
+            rgba(255,255,255,.37) 80%,
+            rgba(255,255,255,.15) 90%,
+            rgba(255,255,255,.01) 100%);
+
+    .resultsContainer {
+      list-style: none;
+      padding: 0 24px 48px;
+      transition:all .1s ease-in-out;
+      background: linear-gradient(to bottom,
+              rgba(255,255,255,.99) 0,
+              rgba(255,255,255,.624) 92%,
+              rgba(255,255,255,.58) 94%,
+              rgba(255,255,255,.37) 96%,
+              rgba(255,255,255,.15) 98%,
+              rgba(255,255,255,.01) 100%);
+
+      li {
+        font-size: 24px;
+        padding-bottom:5px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &.suggestedText {
+          cursor: default;
+          padding-bottom: 5px;
+          color: var(--darkGray);
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.mainGrid {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 1rem;
+
+  > div {
+    border-radius: 10px;
+    background: var(--black);
+
+    &:first-child {
+      background: var(--blue);
+    }
+
+    &:last-child {
+      background: var(--purple);
+    }
+  }
+}

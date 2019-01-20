@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="results"
+  >
+    <ul
+      class="resultsContainer"
+    >
+      <li
+        class="suggestedText"
+      >
+        Suggested
+      </li>
+      <li>
+        <span
+          data-testid="matcher"
+          style="color: #b9b9b9"
+        >
+          Re
+        </span>
+        cord
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <header>
+    <div>
+      <input
+        name="search"
+        placeholder="Start typing to search"
+        type="search"
+      />
+    </div>
+    <button
+      class="btn btnSignup"
+    >
+      Sign up
+    </button>
+    <button
+      class="btn"
+    >
+      Log in
+    </button>
+    <button
+      class="btn"
+    >
+      ...
+    </button>
+  </header>
+</div>
+`;
