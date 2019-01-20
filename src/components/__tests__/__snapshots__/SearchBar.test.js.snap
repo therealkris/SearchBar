@@ -2,7 +2,9 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <div>
+  <div
+    class="search"
+  >
     <input
       name="search"
       placeholder="Start typing to search"

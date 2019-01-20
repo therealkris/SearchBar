@@ -2,29 +2,37 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <header>
-    <div>
+  <div
+    class="header"
+  >
+    <div
+      class="search"
+    >
       <input
         name="search"
         placeholder="Start typing to search"
         type="search"
       />
     </div>
-    <button
-      class="btn btnSignup"
+    <div
+      class="buttons"
     >
-      Sign up
-    </button>
-    <button
-      class="btn"
-    >
-      Log in
-    </button>
-    <button
-      class="btn"
-    >
-      ...
-    </button>
-  </header>
+      <button
+        class="btn btnSignup"
+      >
+        Sign up
+      </button>
+      <button
+        class="btn"
+      >
+        Log in
+      </button>
+      <button
+        class="btn"
+      >
+        ...
+      </button>
+    </div>
+  </div>
 </div>
 `;

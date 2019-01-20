@@ -3,6 +3,7 @@ import * as React from "react";
 
 import { suggestTerms, search } from "../services/api";
 import Results from "./Results";
+import styles from './styles.module.scss'
 
 type SearchState = {
   results: Array<string>,
@@ -33,7 +34,7 @@ export default class SearchBar extends React.Component<{}, SearchState> {
   render() {
     const { results, term } = this.state;
     return (
-      <div>
+      <div className={styles.search}>
         <input
           type="search"
           name="search"
